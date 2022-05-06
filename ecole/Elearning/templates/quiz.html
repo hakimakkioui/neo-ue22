@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="{% static 'css_quiz/style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+<body>
+    <h2><a  class="text-white"   href="/accueil" style="margin-left:50px;">Accueil</a> </h2>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+            <h1>Etes-vous prêt?</h1>
+            <a href="/game" class="btn">Play</a>
+            <a href="/highscores" id="highscore-btn" class="btn">High Scores<i class="fas fa-crown"></i></a>
+        </div>
+    </div>
+</body>
+</html>

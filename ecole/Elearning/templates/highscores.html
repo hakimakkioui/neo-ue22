@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus haut score</title>
+    <link rel="stylesheet" href="{% static 'css_quiz/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css_quiz/highscores.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+<body>
+    <h2><a  class="text-white"   href="/accueil" style="margin-left:50px;">Accueil</a> </h2>
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Top participant</h1>
+            <ul id="highScoresList"></ul>
+            <a href="/quiz" class="btn">Retour accueil<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <script src="{% static 'js_quiz/highscores.js' %}"></script>
+</body>
+</html>
